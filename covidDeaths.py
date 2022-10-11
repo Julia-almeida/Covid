@@ -8,7 +8,7 @@ from skimage import io
 
 #Import COVID deaths data from https://data.cdc.gov/NCHS/Provisional-COVID-19-Deaths-by-Place-of-Death-and-/uggs-hy5q 
 #Direct link to csv file: https://data.cdc.gov/api/views/uggs-hy5q/rows.csv 
-df = pd.read_csv("https://raw.githubusercontent.com/btete/Covid/main/cdc_covid_deaths_9_17_22.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/Julia-almeida/Covid/main/cdc_covid_deaths_9_17_22.csv")
 #Shrinking df by excluding unnecessary data:
 startDate = df[df["Start Date"] == "01/01/2020"] #all the rows from df that have 01/01/2020 as starting date
 endDate = startDate[startDate["End Date"] == "09/17/2022"]
@@ -61,7 +61,7 @@ plt.title('COVID-Related Deaths by State')
 plt.show()
 
 #The population.csv uses data from https://data.census.gov/cedsci/table?tid=PEPPOP2021.NST_EST2021_POP&hidePreview=false 
-population_df = pd.read_csv("https://raw.githubusercontent.com/btete/Covid/main/population.csv")
+population_df = pd.read_csv("https://raw.githubusercontent.com/Julia-almeida/Covid/main/population.csv")
 population = []
 for i,row in population_df.iterrows():
   population.append(int(row[1]))
