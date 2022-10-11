@@ -61,7 +61,7 @@ plt.title('COVID-Related Deaths by State')
 plt.show()
 
 #The population.csv uses data from https://data.census.gov/cedsci/table?tid=PEPPOP2021.NST_EST2021_POP&hidePreview=false 
-population_df = pd.read_csv("https://raw.githubusercontent.com/Julia-almeida/Covid/main/population.csv")
+population_df = pd.read_csv("https://raw.githubusercontent.com/Julia-almeida/Covid/main/populations.csv")
 population = []
 for i,row in population_df.iterrows():
   population.append(int(row[1]))
