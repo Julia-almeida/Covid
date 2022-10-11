@@ -88,12 +88,8 @@ plt.show()
 
 
 #Embedding a line chart with COVID Deaths:
-#Info about vaccines: https://www.kff.org/coronavirus-covid-19/issue-brief/latest-data-on-covid-19-vaccinations-by-race-ethnicity/
-#Chart Source: https://covid.cdc.gov/covid-data-tracker/#trends_dailydeaths_select_00 
 print()
 print()
-#urllib.request.urlretrieve('https://raw.githubusercontent.com/btete/Covid/main/us-covid-deaths.png', 'us-covid-deaths.png')
-#img = Image.open('us-covid-deaths.png')
 img = io.imread('https://raw.githubusercontent.com/btete/Covid/main/us-covid-deaths.png')
 plt.figure(figsize=(12, 8), dpi=100)
 plt.imshow(img)
