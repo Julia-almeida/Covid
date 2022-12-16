@@ -15,6 +15,9 @@ endDate = startDate[startDate["End Date"] == "09/17/2022"]
 totalDeaths = endDate[endDate["Place of Death"] == "Total - All Places of Death"]
 #print(totalDeaths)
 
+vaccines = pd.read_csv("https://raw.githubusercontent.com/Julia-almeida/Covid/main/COVID-19_Vaccinations_in_the_United_States_County_Sept_to_Dec_2022.csv")
+
+
 newFile = open("rowsNeeded.csv", 'w') #creating and opening the csv file for future data entry
 writeToFile = csv.writer(newFile) #using writer() method for future data entry to newly created file
 
